@@ -1,3 +1,4 @@
 FROM postgres
-COPY resources/et4.sql /docker-entrypoint-initdb.d/
+COPY resources/empresa-public-postgres-full.sql
+ /docker-entrypoint-initdb.d/
 EXPOSE 5432
